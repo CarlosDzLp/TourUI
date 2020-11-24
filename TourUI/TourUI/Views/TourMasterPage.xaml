@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    xmlns:font="clr-namespace:TourUI.Fonts" xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:converts="clr-namespace:TourUI.Converts"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="TourUI.Views.TourMasterPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converts:PriceConvert x:Key="price" />
+            <converts:RatingConvert x:Key="rating" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,*" RowSpacing="0">
+            <StackLayout
+                Padding="10,0"
+                Grid.Row="0">
+                <Grid ColumnDefinitions="Auto,*">
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="Solid"
+                                Size="25"
+                                Glyph="{x:Static font:FontAwesomeIcons.Hamburguer}"
+                                Color="DarkGray"/>
+                        </Image.Source>
+                    </Image>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Grid.Column="1"
+                        Text="XamTour"
+                        TextColor="Black"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="1"
+                Padding="20,0">
+            <CollectionView ItemsSource="{Binding ListCity}" SelectionMode="Single" VerticalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                            <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
+                        </CollectionView.ItemsLayout>
+                <CollectionView.Header>
+                    <StackLayout
+                        Padding="0,30,0,0">
+                        <StackLayout>
+                            <Label
+                                FontSize="20"
+                                Text="Find the best tour"/>
+                            <Label
+                                FontSize="16"
+                                Text="Country"/>
+                        </StackLayout>
+                        <CollectionView HorizontalScrollBarVisibility="Never" ItemsSource="{Binding ListCity}" HeightRequest="200">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal"
+                                               SnapPointsAlignment="Start"
+                                               SnapPointsType="Mandatory"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                    <Frame
+                                        HasShadow="False"
+                                        Padding="0"
+                                        IsClippedToBounds="True"
+                                        CornerRadius="10">
+                                        <Grid>
+                                            <Image
+                                                WidthRequest="130"
+                                                Aspect="AspectFill"
+                                                HeightRequest="200"
+                                                Source="{Binding PathImage}"/>
+                                            <pancakeview:PancakeView
+                                                Margin="10"
+                                                Padding="5"
+                                                CornerRadius="10"
+                                                VerticalOptions="Start"
+                                                HorizontalOptions="Start"
+                                                BackgroundColor="White">
+                                                <Label
+                                                    FontSize="11"
+                                                    TextColor="#dadada"
+                                                    Text="{Binding Type}"/>
+                                            </pancakeview:PancakeView>
+                                            <Grid ColumnDefinitions="*,Auto"
+                                                  Padding="10,0,10,20"
+                                                  VerticalOptions="End">
+                                                <StackLayout
+                                                    Grid.Column="0">
+                                                    <Label
+                                                        TextColor="White"
+                                                        FontSize="16"
+                                                        Text="{Binding Name}"/>
+                                                    <Label
+                                                        FontSize="12"
+                                                        Text="{Binding Hours}"/>
+                                                </StackLayout>
+                                                <Frame Grid.Column="1" CornerRadius="5"
+                                                       Padding="3,5"
+                                                       HasShadow="False"
+                                                       BackgroundColor="White">
+                                                    <StackLayout>
+                                                        <Label
+                                                        FontSize="14"
+                                                        Text="{Binding Rating,Converter={StaticResource rating}}"/>
+                                                    <Image>
+                                                        <Image.Source>
+                                                            <FontImageSource
+                                                                Size="15"
+                                                                Color="#dadada"
+                                                                FontFamily="Solid"
+                                                                Glyph="{x:Static font:FontAwesomeIcons.Star}"/>
+                                                        </Image.Source>
+                                                    </Image>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </Grid>
+                                        </Grid>
+                                    </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                        <StackLayout
+                            Margin="0,20,0,10">
+                            <Label
+                                FontSize="20"
+                                Text="Popular Tours"/>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </CollectionView.Header>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            HasShadow="False"
+                            Padding="0"
+                            IsClippedToBounds="True"
+                            CornerRadius="20">                   
+                        <Grid ColumnDefinitions="Auto,*,Auto" BackgroundColor="#E9F4FA">
+                            <Image
+                                HeightRequest="50"
+                                Aspect="AspectFill"
+                                WidthRequest="120"
+                                Grid.Column="0"
+                                Source="{Binding PathImage}">
+                            </Image>
+                            <StackLayout
+                                Padding="0,10"
+                                Grid.Column="1">
+                                <Label
+                                    FontSize="14"
+                                    Text="{Binding Name}"/>
+                                <Label
+                                    FontSize="12"
+                                    TextColor="DarkGray"
+                                    Text="{Binding Description}"
+                                    MaxLines="2"
+                                    LineBreakMode="TailTruncation"/>
+                                <Label
+                                    FontSize="14"
+                                    Text="{Binding Price}"/>
+                            </StackLayout>
+                            <StackLayout
+                                Padding="0,0,10,0"
+                                Grid.Column="2"
+                                HorizontalOptions="Center"
+                                VerticalOptions="CenterAndExpand">
+                                <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Center">
+                                    <pancakeview:PancakeView
+                                    VerticalOptions="Center"
+                                        Padding="5,10"
+                                    HorizontalOptions="Center"
+                                    CornerRadius="10"
+                                    BackgroundColor="#2D9563">
+                                    <StackLayout>
+                                        <Label
+                                    FontSize="14"
+                                    Text="{Binding Rating}"/>
+                                        <Image>
+                                        <Image.Source>
+                                            <FontImageSource
+                                                FontFamily="Solid"
+                                                Size="15"
+                                                Glyph="{x:Static font:FontAwesomeIcons.Star}"
+                                                Color="White"/>
+                                        </Image.Source>
+                                    </Image>
+                                    </StackLayout>                                  
+                                </pancakeview:PancakeView>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                        </Grid>
+                            </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+                </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

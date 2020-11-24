@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{DD8A64ED-07CA-4183-AA82-028FCF18A6AD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TourUI/Views/TourMasterPage.xaml">
+    <Files>
+      <File FileName="TourUI/Views/TourMasterPage.xaml" Line="158" Column="12" />
+      <File FileName="TourUI/ViewModels/TourMasterPageViewModel.cs" Line="77" Column="38" />
+      <File FileName="TourUI/Converts/PriceConvert.cs" Line="11" Column="12" />
+      <File FileName="TourUI/Converts/RatingConvert.cs" Line="21" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TourUI" expanded="True">
+            <Node name="TourUI" expanded="True">
+              <Node name="Converts" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="TourMasterPage.xaml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TourUI.iOS automaticSigning="False" TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EED88E1E-000A-43B9-B80C-C8500FA0BB11" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TourUI.Android FirstBuild="True" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiazlopez/TourUI/TourUI/TourUI/Converts/RatingConvert.cs" relfile="TourUI/Converts/RatingConvert.cs" line="14" column="1" />
+      <Breakpoint file="/Users/carlosdiazlopez/TourUI/TourUI/TourUI/Converts/PriceConvert.cs" relfile="TourUI/Converts/PriceConvert.cs" line="10" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

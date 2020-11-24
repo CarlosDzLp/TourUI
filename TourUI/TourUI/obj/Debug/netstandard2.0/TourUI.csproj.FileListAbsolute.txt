@@ -1,0 +1,16 @@
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/bin/Debug/netstandard2.0/TourUI.deps.json
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/bin/Debug/netstandard2.0/TourUI.dll
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/bin/Debug/netstandard2.0/ref/TourUI.dll
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/bin/Debug/netstandard2.0/TourUI.pdb
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.csprojAssemblyReference.cache
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/Views/TourDetailPage.xaml.g.cs
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/Views/TourMasterPage.xaml.g.cs
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.AssemblyInfoInputs.cache
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.AssemblyInfo.cs
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.csproj.CoreCompileInputs.cache
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.csproj.Fody.CopyLocal.cache
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.dll
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/ref/TourUI.dll
+/Users/carlosdiazlopez/TourUI/TourUI/TourUI/obj/Debug/netstandard2.0/TourUI.pdb

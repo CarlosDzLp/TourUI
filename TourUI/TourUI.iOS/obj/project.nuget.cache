@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "tSdtI4/uQTBGjjylY5bBpoocz+EFbf0lK10Y2YEnpyh91xsB5gRi67pZG+7MVPOX0k4mTrPi8R9CyxMp9gYHMQ==",
+  "success": true,
+  "projectFilePath": "/Users/carlosdiazlopez/TourUI/TourUI/TourUI.iOS/TourUI.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/carlosdiazlopez/.nuget/packages/fody/6.3.0/fody.6.3.0.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/propertychanged.fody/3.3.1/propertychanged.fody.3.3.1.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/xamarin.forms.pancakeview/2.3.0.759/xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "/Users/carlosdiazlopez/.nuget/packages/xamarin.plugin.sharedtransitions/2.4.0/xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
